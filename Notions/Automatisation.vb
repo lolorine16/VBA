@@ -29,7 +29,7 @@ Sub exemple()
     Range("A1:A8").Font.Bold - False
 
     '====Texte en italique====
-    Range("A1:A8").Font.Italic = True
+    Range("A1:A8").Font.Italic - True
 
     '====Texte souligné====
     Range("A1:A8").Font.Underline - True
