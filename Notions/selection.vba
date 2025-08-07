@@ -33,4 +33,17 @@ Sub exemple()
     'Traduction:
     'Cells([nombre_aleatoire_entre_1_et_10], 1).Select
 
+    '=================================
+
+    'Selection des lignes 2 a 6
+    Range("2:6").Select
+    'ou
+    Rows("2:6").Select
+
+    'Selection des colonnes B a G
+    Range("B:G").Select
+    'ou
+    Columns("B:G").Select
+
+
 End Sub
