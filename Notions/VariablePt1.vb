@@ -69,3 +69,37 @@ Sub exemple()
     'ces deux lignes sont identiques
 
 End Sub
+
+'========================================
+'Exemple pratique
+'Remplisser votre classeur de Noms a la colonne A, prenoms Colonne B et Age Colonne C
+Sub variable()
+    'Declaration des variables
+    Dim nom As String, prenom As String, age As Integer
+
+    'Valeurs des variables
+    nom = Cells(2,1)
+    prenom = Cells(2,2)
+    age = Cells(2, 3)
+
+    'Boite de dialogue
+    MsgBox nom & " " & prenom & ", " & age & " ans"
+
+ 
+End Sub
+
+'====================================
+'effectuer l'operation en fonction d'un numero donner par l'utilisateur
+Sub variable2()
+    'Declaration des variables
+    Dim nom As String, prenom As String, age As Integer, numeroLigne As Integer
+
+    'Valeurs des variables
+    numeroLigne = Range("F4") + 1
+    nom = Cells(numeroLigne, 1)
+    prenom = Cells(numeroLigne, 2)
+    age = Cells(numeroLigne, 3)
+
+    'Boite de dialogue
+    MsgBox nom & " " & prenom & ", " & age & " ans"
+End Sub
