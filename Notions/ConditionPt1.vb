@@ -42,3 +42,25 @@ Sub variables()
     End If
         
 End Sub
+
+'Utilisation d'operateur logique et de comparaison
+Sub exemple()
+    'Si F4 est numerique
+    If IsNumeric(Range("F4")) Then
+
+        Dim nom As String, prenom As String, age As Integer
+        Dim numeroLigne As Integer
+        numeroLigne = Range("F4") + 1
+
+        'Si le numero est dans la bonne plage
+        If numeroLigne >= 2 And numeroLigne <= 17 Then
+            nom = cells(numeroLigne, 1)
+            prenom = Cells(numeroLigne, 2)
+            age = Cells(numeroLigne, 3)
+            MsgBox nom & " " & prenom & ", " & age & " ans"
+        'Si le numero est en dehors de la plage
+        Else
+            MsgBox "L'entree """ & Range("F4") & """ n'est pas valide !"
+            Range("F4") = ""
+        End If
+End Sub
