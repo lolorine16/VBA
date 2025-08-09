@@ -105,3 +105,6 @@ Sub commentaire()
     Range("B1") = commentaire
     
 End Sub
+
+'======================================================
+'SELECT
